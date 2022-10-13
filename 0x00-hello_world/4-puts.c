@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(Void)
+int main(void)
 {
 	char Putter[] = "Programming is like building a multilingual puzzle";
 
