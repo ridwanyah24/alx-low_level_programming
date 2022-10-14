@@ -9,14 +9,13 @@ int main(void)
 {
 	int lowerNotAllChar;
 
-	if (lowerNotAllChar != 0x65 || lowerNotAllChar != 0x71)
-	{
+	do {
 		for (lowerNotAllChar = 0x61; lowerNotAllChar < 0x7B; lowerNotAllChar++)
 		{
 			putchar(lowerNotAllChar);
 		}
-	}
-	putchar(0x0A);
+	} while (lowerNotAllChar != 0x65 && lowerNotAllchar != 0x71)
+
 
 	return (0);
 }
