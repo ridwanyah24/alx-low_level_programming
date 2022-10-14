@@ -16,6 +16,7 @@ int main(void)
 			putchar(lowerchar);
 		}
 	}
+	putchar(0x0A);
 
 	return (0);
 }
