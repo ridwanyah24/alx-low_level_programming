@@ -26,7 +26,6 @@ int main(void)
 			}
 		}
 	putchar(0x0A);
-
-	return (0);
 	}
+	return (0);
 }
