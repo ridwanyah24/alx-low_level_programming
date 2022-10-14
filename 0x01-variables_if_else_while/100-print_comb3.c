@@ -28,4 +28,6 @@ int main(void)
 	putchar(0x0A);
 
 	return (0);
+	}
 }
+
