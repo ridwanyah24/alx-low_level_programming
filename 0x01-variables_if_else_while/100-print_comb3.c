@@ -8,7 +8,6 @@ int main(void)
 {
 	int i;
 	int j;
-	int y[] = {i , j};
 
 	for (i = 0x30; i <= 0x39; i++)
 	{
