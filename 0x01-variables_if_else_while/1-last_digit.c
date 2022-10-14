@@ -16,13 +16,13 @@ int main(void)
 	mo = n % 10;
 	if (mo == 0)
 	{
-		printf("Last digit of %d is %d", n, mo, +" and is 0");
+		printf("Last digit of %d is %d + and is 0\n", n, mo);
 	} else if (mo > 5)
 	{
-		printf("Last digit of %d is %d", n, mo, +"and is greater than 5");
+		printf("Last digit of %d is %d and is greater than 5\n", n, mo);
 	} else if (mo < 6 && mo != 0)
 	{
-		printf("Last digit of %d is %d", n, mo, +"and is less than 6 and not 0");
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, mo);
 	}
 	return (0);
 }
