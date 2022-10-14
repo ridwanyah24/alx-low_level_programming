@@ -8,12 +8,13 @@ int main(void)
 {
 	int i;
 	int j;
+	int y[] = {i , j};
 
 	for (i = 0x30; i <= 0x39; i++)
 	{
 		for (j = 0x30; j <= 0x39; j++)
 		{
-			if (i != j)
+			if (i != j && i < j)
 			{
 				putchar(i);
 				putchar(j);
