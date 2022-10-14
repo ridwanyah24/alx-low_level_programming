@@ -9,13 +9,13 @@ int main(void)
 	int i;
 	int j;
 
-	for (i = '0'; i <= 9; i++)
+	for (i = 0x30; i <= 0x39; i++)
 	{
 		putchar(i);
-		for (j = '0'; j <= 9; j++)
+		for (j = 0x30; j <= 0x39; j++)
 		{
 			putchar(j);
-			if (i != '9' && j != '9')
+			if (i != 0x39 && j != 0x39)
 			{
 				putchar(',');
 				putchar(' ');
