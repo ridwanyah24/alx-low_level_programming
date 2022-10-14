@@ -3,9 +3,9 @@
 /**
   *main - code runs here
   *
-  *Returns: Code returns 0
+  *Return: Code returns 0
   */
-int main (void)
+int main(void)
 {
 	int upperChar;
 	int lowerChar;
@@ -19,6 +19,5 @@ int main (void)
 		putchar(upperChar);
 	}
 	putchar(0x0A);
-	
 	return (0);
 }
