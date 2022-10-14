@@ -20,16 +20,19 @@ int main(void)
 					putchar(i);
 					putchar(j);
 					putchar(' ');
-					putchar(k);
-					putchar(l);
+					if (k != l && k < l)
+					{
+						putchar(k);
+						putchar(l);
+					}
 					if (i == '9' && j == '8' && k == '9' && 'l' == '9')
 					{
 						break;
 					}
 					putchar(',');
 					putchar(' ');
-				}	
-			}	
+				}
+			}
 		}
 	}
 	putchar('\n');
