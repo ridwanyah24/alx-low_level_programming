@@ -24,10 +24,9 @@ int main(void)
 				putchar(',');
 				putchar(' ');
 			}
-	}
+		}
 	putchar(0x0A);
 
 	return (0);
 	}
 }
-
