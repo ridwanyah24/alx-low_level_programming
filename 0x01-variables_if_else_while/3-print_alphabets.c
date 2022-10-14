@@ -10,7 +10,7 @@ int main (void)
 	int upperChar;
 	int lowerChar;
 
-	for (lowerChar = 0x61; upperChar < 0x7B; lowerChar++)
+	for (lowerChar = 0x61; lowerChar < 0x7B; lowerChar++)
 	{
 		putchar(lowerChar);
 	}
