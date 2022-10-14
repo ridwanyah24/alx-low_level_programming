@@ -13,7 +13,7 @@ int main(void)
 	{
 		if (lowerchar != 0x65 && lowerchar != 0x71)
 		{
-			putchar(lowechar);
+			putchar(lowerchar);
 		}
 	}
 
