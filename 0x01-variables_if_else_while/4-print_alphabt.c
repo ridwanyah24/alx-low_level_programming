@@ -14,7 +14,7 @@ int main(void)
 		{
 			putchar(lowerNotAllChar);
 		}
-	} while (lowerNotAllChar != 0x65 && lowerNotAllChar != 0x71)
+	} while (lowerNotAllChar != 0x65 && lowerNotAllChar != 0x71);
 
 
 	return (0);
