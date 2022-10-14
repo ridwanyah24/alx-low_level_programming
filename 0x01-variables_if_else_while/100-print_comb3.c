@@ -17,15 +17,16 @@ int main(void)
 			{
 				putchar(i);
 				putchar(j);
-				putchar(',');
-				putchar(' ');
 				if (i == '8' && j == '9')
 				{
 					break;
 				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
-	putchar(0x0A);
 	}
+	putchar(0x0A);
+
 	return (0);
 }
