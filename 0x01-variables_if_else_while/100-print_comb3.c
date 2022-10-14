@@ -11,12 +11,12 @@ int main(void)
 
 	for (i = 0x30; i <= 0x39; i++)
 	{
-		putchar(i);
 		for (j = 0x30; j <= 0x39; j++)
 		{
-			putchar(j);
-			if (i != 0x39 && j != 0x39)
+			if (i != j)
 			{
+				putchar(i);
+				putchar(j);
 				putchar(',');
 				putchar(' ');
 			}
