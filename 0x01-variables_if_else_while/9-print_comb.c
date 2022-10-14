@@ -12,8 +12,11 @@ int main(void)
 	for (numb = 0x30; numb <= 0x39; numb++)
 	{
 		putchar(numb);
-		putchar(',');
-		putchar(' ');
+		if (numb != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar(0x0A);
 
