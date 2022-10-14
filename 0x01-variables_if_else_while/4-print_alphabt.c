@@ -7,15 +7,15 @@
   */
 int main(void)
 {
-	int lowerNotAllChar;
+	int lowerchar;
 
-	do {
-		for (lowerNotAllChar = 0x61; lowerNotAllChar < 0x7B; lowerNotAllChar++)
+	for (lowerchar = 0x61; lowerchar < 0x7B; lowerchar++)
+	{
+		if (lowerchar != 0x65 && lowerchar != 0x71)
 		{
-			putchar(lowerNotAllChar);
+			putchar(lowechar);
 		}
-	} while (lowerNotAllChar != 0x65 && lowerNotAllChar != 0x71);
-
+	}
 
 	return (0);
 }
