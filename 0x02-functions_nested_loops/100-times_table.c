@@ -20,19 +20,19 @@ void print_times_table(int n)
 		for (stopper = 1; stopper <= n; stopper++)
 		{
 			muller = begin * stopper;
-			if ((muller + n) / n == n + 1)
-			{
-				break;
-			}
-			if (muller < 10)
+			if (muller < 10 && muller != (n*n))
 			{
 				printf("%d,   ", muller);
-			} else if (muller >= 10)
+			} else if (muller >= 10 && muller != (n*n))
 			{
 				printf("%d,  ", muller);
-			} else if (muller >= 100)
+			} else if (muller >= 100 && muller != (n*n))
 			{
 				printf("%d, ", muller);
+			}
+			if (muller == (n*n))
+			{
+				printf("%d",muller);
 			}
 		}
 		printf("\n");
