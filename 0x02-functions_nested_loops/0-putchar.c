@@ -6,9 +6,10 @@
   */
 int main(void)
 {
-	char arr[] = {'_','p','u','c','h','a','r'};
-	
-	for (int i = 0; i <=6; i++)
+	char arr[] = {'_', 'p', 'u', 'c', 'h', 'a', 'r'};
+	int i;
+
+	for (int i = 0; i <= 6; i++)
 	{
 		_putchar(arr[i]);
 	}
