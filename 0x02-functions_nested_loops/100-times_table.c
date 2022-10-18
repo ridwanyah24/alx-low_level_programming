@@ -18,6 +18,10 @@ void print_times_table(int n)
 		printf(0);
 		for (stopper = 1; stopper <= n; stopper++)
 		{
+			if (stopper > n)
+			{
+				break;
+			}
 			muller = begin * stopper;
 			printf ("%d, ", muller);
 		}
