@@ -3,24 +3,26 @@
 /**
   * print_to_98 - print natural numbers from n to 98
   *@n: the number to start from
-  * 
   *Return: code returns void
   */
 void print_to_98(int n)
 {
-	if (n >= 98)
+	n = '0' + n;
+
+	if (n >= 'b')
 	{
-		for (n = n; n >= 98; n--)
+		while (n >= 'b')
 		{
-			_putchar(n + '0');
+			_putchar(n);
 			_putchar(',');
 			_putchar(' ');
+			n--;
 		}
-	} else if (n <= 98)
+	} else if (n <= 'b')
 	{
-		for (n = n; n <= 98; n++)
+		for (n = n; n <= 'b'; n++)
 		{
-			_putchar(n + '0');
+			_putchar(n);
 			_putchar(',');
 			_putchar(' ');
 		}
