@@ -22,13 +22,13 @@ void print_times_table(int n)
 			muller = begin * stopper;
 			if (muller < 10)
 			{
-				printf("%d   ", muller);
+				printf("%d,   ", muller);
 			} else if (muller >= 10)
 			{
-				printf("%d  ", muller);
+				printf("%d,  ", muller);
 			} else if (muller >= 100)
 			{
-				printf("%d ", muller);
+				printf("%d, ", muller);
 			}
 			if (stopper >= n)
 			{
