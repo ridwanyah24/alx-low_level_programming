@@ -1,15 +1,10 @@
 #include <unistd.h>
 #include "main.h"
 /**
-  * main - code runs here
+  * print_alphabet - function prints all alphabets in lowercase
   *
-  *Return: code returns 0
+  *Return: code returns void
   */
-int main(void)
-{
-	return (0);
-}
-
 void print_alphabet(void)
 {
 	int i;
