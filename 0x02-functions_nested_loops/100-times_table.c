@@ -20,5 +20,6 @@ void print_times_table(int n)
 			muller = begin * stopper;
 			printf ("%d, ", muller);
 		}
+		printf("\n");
 	}
 }
