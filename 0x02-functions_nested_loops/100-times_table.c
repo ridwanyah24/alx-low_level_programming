@@ -10,31 +10,38 @@
   */
 void print_times_table(int n)
 {
-	int begin;
-	int stopper;
-	int muller;
+	int a, b, op;
 
-	for (begin = 0; begin <= n; begin++)
+	if (n >= 0 && n <= 15)
 	{
-		printf("%d,   ", 0);
-		for (stopper = 1; stopper <= n; stopper++)
+		for (a = 0; a <= n; a++)
 		{
-			muller = begin * stopper;
-			if (muller < 10 && muller != (begin * n))
+			_putchar(48);
+			for (b = 1; b <= n; b++)
 			{
-				printf("%d,   ", muller);
-			} else if (muller >= 10 && muller != (begin * n))
-			{
-				printf("%d,  ", muller);
-			} else if (muller >= 100 && muller != (begin * n))
-			{
-				printf("%d, ", muller);
+				op = a * b;
+				_putchar(44);
+				_putchar(32);
+				if (op <= 9)
+				{
+					_putchar(32);
+					_putchar(32);
+					_putchar(op + 48);
+				}
+				else if (op <= 99)
+				{
+					_putchar(32);
+					_putchar((op / 10) + 48);
+					_putchar((op % 10) + 48);
+				}
+				else
+				{
+					_putchar(((op / 100) % 10) + 48);
+					_putchar(((op / 10) % 10) + 48);
+					_putchar((op % 10) + 48);
+				}
 			}
-			if (muller == (begin * n))
-			{
-				printf("%d",muller);
-			}
+			_putchar('\n');
 		}
-		printf("\n");
 	}
 }
