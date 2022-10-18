@@ -1,10 +1,5 @@
 #include <unistd.h>
-/**
-  * print_alphabet - prints lowercase alpahbets from a-z
-  *@parameter: doesn't take any params
-  *Return: function returns void
-  */
-void print_alphabet(void);
+#include "main.h"
 /**
   * main - code runs here
   *
