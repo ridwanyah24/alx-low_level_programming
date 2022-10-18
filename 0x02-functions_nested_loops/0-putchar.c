@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include "_putchar.h"
+#include <unistd.h>
 /**
   * main - The code runs here
   *Return: the code returns 0
@@ -11,6 +12,7 @@ int main(void)
 	{
 		putchar(arr[i]);
 	}
+	putchar('\n');
 
 	return (0);
 }
