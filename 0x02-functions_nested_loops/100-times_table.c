@@ -16,12 +16,21 @@ void print_times_table(int n)
 
 	for (begin = 0; begin <= n; begin++)
 	{
-		printf("%d,  ",0);
+		printf("%d,   ", 0);
 		for (stopper = 1; stopper <= n; stopper++)
 		{
 			muller = begin * stopper;
-			printf("%d,  ", muller);
-			if (stopper > n)
+			if (muller < 10)
+			{
+				printf("%d   ", muller)
+			} else if (muller >= 10)
+			{
+				printf("%d  ", muller);
+			} else if (muller >= 100)
+			{
+				printf("%d ", muller);
+			}
+			if (begin >= n)
 			{
 				break;
 			}
