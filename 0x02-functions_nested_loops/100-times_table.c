@@ -15,10 +15,10 @@ void print_times_table(int n)
 	int muller;
 	for (begin = 0; begin <= n; begin++)
 	{
-		printf("0");
+		printf("0, ");
 		for (stopper = 1; stopper <= n; stopper++)
 		{
-			if (stopper > n)
+			if (stopper >= n)
 			{
 				break;
 			}
