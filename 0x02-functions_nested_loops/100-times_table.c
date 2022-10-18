@@ -20,6 +20,10 @@ void print_times_table(int n)
 		for (stopper = 1; stopper <= n; stopper++)
 		{
 			muller = begin * stopper;
+			if ((muller + n) / n == n + 1)
+			{
+				break;
+			}
 			if (muller < 10)
 			{
 				printf("%d,   ", muller);
@@ -29,10 +33,6 @@ void print_times_table(int n)
 			} else if (muller >= 100)
 			{
 				printf("%d, ", muller);
-			}
-			if (stopper >= n)
-			{
-				break;
 			}
 		}
 		printf("\n");
