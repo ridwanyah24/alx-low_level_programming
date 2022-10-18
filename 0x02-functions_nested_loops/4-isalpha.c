@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <ctype.h>
 #include "main.h"
 /**
   * _isalpha - check if letters are in alphabetical order
