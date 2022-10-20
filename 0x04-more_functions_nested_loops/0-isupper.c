@@ -10,7 +10,7 @@
   */
 int _isupper(int c)
 {
-	if (isupper(c + 48))
+	if (isupper(c + 48) != 0)
 	{
 		return (1);
 	}
