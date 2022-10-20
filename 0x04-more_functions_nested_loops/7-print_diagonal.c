@@ -1,26 +1,23 @@
-#include "main.h"
+#include "holberton.h"
+
 /**
-  * print_diagonal - prints a diagonal line on the terminal
-  *@n: number of backslashes to print
-  *
-  *Return: void
-  */
+ * print_diagonal - prints diagonal line n times.
+ * @n: times diagonal line is printed.
+ * Return: no return.
+ */
 void print_diagonal(int n)
 {
-	int count = 0;
-	int back = 0;
-	int numoflines = 0;
+	int i, j;
 
-	while ((count < n) && n > 0)
+	for (i = 0; i < n; i++)
 	{
-		while ((back < numoflines))
+		for (j = 0; j < i; j++)
 		{
 			_putchar(' ');
-			back++;
 		}
-		count++;
-		numoflines++;
-		_putchar('\\');
-		_putchar('\n');
+		_putchar(92);
+		if (i < (n - 1))
+			_putchar('\n');
 	}
+	_putchar('\n');
 }
