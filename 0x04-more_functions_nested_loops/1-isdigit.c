@@ -1,3 +1,6 @@
+#include <unistd.h>
+#include "main.h"
+#include <stdio.h>
 /**
   * _isdigit - check if a number is from 0-9
   *@c: input param
