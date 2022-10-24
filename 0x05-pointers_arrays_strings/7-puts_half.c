@@ -13,13 +13,13 @@ void puts_half(char *str)
 	while (count >= 0)
 	{
 		if (str[count] == '\0')
+			_putchar('\n');
 			break;
 		count++;
 	}
 	count /= 2;
-	for (i = 0; i <= count; i++)
+	for (i = count; i >= 0; i--)
 	{
 		_putchar(str[i]);
 	}
-	_putchar('\n');
 }
