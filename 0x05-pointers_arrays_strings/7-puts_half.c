@@ -14,7 +14,6 @@ void puts_half(char *str)
 	{
 		if (str[count] == '\0')
 		{
-			_putchar('\n');
 			break;
 		}
 		count++;
