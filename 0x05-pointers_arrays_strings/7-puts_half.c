@@ -20,10 +20,10 @@ void puts_half(char *str)
 		count++;
 	}
 	if (count % 2 == 1)
-		count = count / 2;
+		i = count / 2;
 	else
-		count = (count - 1) / 2;
-	for (i = count; i <= count * 2; i++)
+		i = (count - 1) / 2;
+	for (i++; i < count; i++)
 	{
 		_putchar(str[i]);
 	}
