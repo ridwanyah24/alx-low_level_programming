@@ -4,12 +4,12 @@
 #include <stdio.h>
 /**
   * puts2 - prints every other character in a string
-  *@n: the string
+  *@str: the string
   *Return: void
   */
 void puts2(char *str)
 {
-	unsigned int i;
+	int i;
 
 	for (i = 0; i <= strlen(str) - 1; i += 2)
 	{
