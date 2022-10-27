@@ -10,15 +10,7 @@
   */
 char *_strcat(char *dest, char *src)
 {
-	int i;
+	strcat(dest, src);
 
-	while (i >= 0)
-	{
-		*(dest + strlen(dest)) = *(src + i);
-		if (*(src + i) == '\0')
-			break;
-		i++;
-		strlen(dest)++;
-	}
 	return (dest);
 }
