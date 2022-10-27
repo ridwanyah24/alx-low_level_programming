@@ -20,4 +20,5 @@ char *_strcat(char *dest, char *src)
 		i++;
 		strlen(dest)++;
 	}
+	return (dest);
 }
