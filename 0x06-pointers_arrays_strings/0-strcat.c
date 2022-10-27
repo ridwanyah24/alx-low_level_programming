@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 /**
   * _strcat - concatenates two strings together
   *@dest: desitantion string
