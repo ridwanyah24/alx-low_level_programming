@@ -11,7 +11,7 @@
 char *string_toupper(char *s)
 {
 	int i, j;
-	
+
 	j = strlen(s) - 1;
 	for (i = 0; i <= j; i++)
 	{
