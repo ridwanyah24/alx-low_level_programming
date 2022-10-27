@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
 /**
@@ -8,8 +9,8 @@
   *@n: number of bytes to copy
   *Return: pointer to dest
   */
-char *_strcpy(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
-	strcpy(dest, src, n);
+	strncpy(dest, src, n);
 	return (dest);
 }
