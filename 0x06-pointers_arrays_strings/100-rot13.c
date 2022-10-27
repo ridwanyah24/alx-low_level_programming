@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
   * rot13 - encrypts a string using rot13
-  *@c: the string
+  *@s: the string
   *Return: void
   */
 char *rot13(char *s)
