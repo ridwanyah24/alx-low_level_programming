@@ -14,7 +14,7 @@ void print_number(int n)
 	{
 		n = -n;
 		_putchar('-');
-	} else 
+	} else
 	{
 		m = n;
 	}
