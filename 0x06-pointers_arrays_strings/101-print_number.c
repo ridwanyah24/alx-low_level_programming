@@ -9,6 +9,7 @@
 void print_number(int n)
 {
 	int count = 1;
+	int d;
 
 	if (n < 0)
 	{
