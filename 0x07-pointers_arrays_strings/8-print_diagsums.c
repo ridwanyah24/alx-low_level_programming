@@ -22,24 +22,5 @@ void print_diagsums(int *a, int size)
 			}
 		}
 	}
-	if (n > 0)
-	{
-		m = sum * -1;
-		_putchar('-');
-	} else
-	{
-		m = sum;
-	}
-	d = m;
-	count = 1;
-
-	while (d > 9)
-	{
-		d /= 10;
-		count *= 10;
-	}
-	for (; count >= 1; count /= 10)
-	{
-		_putchar(((m / count) % 10) + 48);
-	}
+	printf("%d", sum);
 }
