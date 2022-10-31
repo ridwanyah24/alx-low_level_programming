@@ -1,7 +1,7 @@
-#define _GNU_SOURCE
 #include "main.h"
 #include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
 /**
   * _strchr - locates a character in a string
   *@s: the string
@@ -10,6 +10,5 @@
   */
 char *_strchr(char *s, char c)
 {
-	strchr(s, c);
-	return (s);
+	return (strchr(s, c));
 }
