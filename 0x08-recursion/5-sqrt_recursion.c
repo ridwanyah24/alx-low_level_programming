@@ -19,10 +19,9 @@ int _sqrt_recursion(int n)
 	{
 		return (1);
 	}
-	if (n / (n - 1) == (n - 1) && (n - 1) != 1)
+	if (n / (n - 1) == n - 1 && (n - 1) != 1)
 	{
 		return (n - 1);
 	}
-	n--;
-	return (_sqrt_recursion(n));
+	return (n / n - _sqrt_recursion(n - 1));
 }
