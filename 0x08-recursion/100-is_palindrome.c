@@ -9,15 +9,21 @@
   */
 int checker(char *s, int n)
 {
+	int i;
+
 	if (n > 1)
 	{
 		if (*s != *(s + n))
 		{
-			return (0);
+			i = 0;
+			return (i);
 		} else
-			return (1);
+		{
+			i = 1;
+		}
 	}
 	return (checker(s + 1, n - 1));
+	return (i);
 }
 /**
   * is_palindrome - checks if a string is a palindrome
