@@ -17,12 +17,10 @@ int checker(char *s, int n)
 		{
 			i = 0;
 			return (i);
-		} else
-		{
-			i = 1;
 		}
+		i = 1;
+		return (checker(s + 1, n - 1));
 	}
-	return (checker(s + 1, n - 1));
 	return (i);
 }
 /**
