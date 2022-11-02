@@ -13,7 +13,7 @@ int checker(char *s, int n)
 
 	if (n > 1)
 	{
-		if (*s != *(s + n))
+		if (*s != *(s + (n - 1)))
 		{
 			i = 0;
 			return (i);
