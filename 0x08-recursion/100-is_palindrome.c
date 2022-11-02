@@ -9,7 +9,7 @@
   */
 int checker(char *s, int n)
 {
-	int i;
+	int i = 1;
 
 	if (n > 1)
 	{
@@ -18,7 +18,6 @@ int checker(char *s, int n)
 			i = 0;
 			return (i);
 		}
-		i = 1;
 	}
 	return (checker(s + 1, n - 1));
 	return (i);
