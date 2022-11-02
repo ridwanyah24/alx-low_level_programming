@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 /**
   *_puts_recursion - prints a string using recursion
   *@s: the string
@@ -14,5 +15,6 @@ void _puts_recursion(char *s)
 	{
 		return;
 	}
-	_putchar(*(s + i));
+	i++;
+	_putchar(_puts_recursion(*(s + i)));
 }
