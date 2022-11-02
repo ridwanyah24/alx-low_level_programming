@@ -7,11 +7,11 @@ int checker(char *s, int n)
 	{
 		if (*s == *(s + n))
 		{
-			return (checker(s + 1, n - 1));
 			return (1);
 		} else
 			return (0);
 	}
+	return (checker(s + 1, n - 1));
 }
 /**
   * is_palindrome - checks if a string is a palindrome
