@@ -1,15 +1,21 @@
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
+/**
+  * checker - checks for palindrome
+  *@s: the string
+  *@n: the string lenght
+  *Return: int
+  */
 int checker(char *s, int n)
 {
 	if (n > 1)
 	{
-		if (*s == *(s + n))
+		if (*s != *(s + n))
 		{
-			return (1);
-		} else
 			return (0);
+		} else
+			return (1);
 	}
 	return (checker(s + 1, n - 1));
 }
