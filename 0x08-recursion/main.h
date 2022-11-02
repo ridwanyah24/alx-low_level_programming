@@ -1,3 +1,4 @@
+int _sqrt_recursion(int n);
 int _pow_recursion(int, int);
 int _strlen_recursion(char *s);
 int factorial(int n);
