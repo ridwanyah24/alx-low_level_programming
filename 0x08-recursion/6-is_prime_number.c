@@ -10,13 +10,13 @@ int checker(int n, int c)
 {
 	if (n % c == 0 && n != c)
 	{
-		return 0;
+		return (0);
 	}
 	else
 	{
 		return (1);
 	}
-	return (checker (n, c + 1));
+	return (checker(n, c + 1));
 }
 /**
   *is_prime_number - returns 1 if integer is prime
