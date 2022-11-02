@@ -19,8 +19,8 @@ int checker(char *s, int n)
 			return (i);
 		}
 		i = 1;
-		return (checker(s + 1, n - 1));
 	}
+	return (checker(s + 1, n - 1));
 	return (i);
 }
 /**
