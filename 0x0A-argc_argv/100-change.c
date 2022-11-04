@@ -1,45 +1,38 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include <ctype.h>
+#include <stdlib.h>
 /**
-  * main -code runs here
-  *@argc: argument count
-  *@argv: argument value
-  *Return: always 0
-  */
-int main(int argc, char **argv)
+ * main - prints the minimum number of coins to make change for an amount.
+ * of money.
+ * @argc: number of command line arguments.
+ * @argv: array that contains the program command line arguments.
+ * Return: 0 - success.
+ */
+int main(int argc, char *argv[])
 {
-	int cent[5] = {25, 10, 5, 2, 1};
-	int i, j, total, change = 0;
-	int remain = 0;
+	int cents, ncoins = 0;
 
-	if (argc != 2)
+	if (argc == 1 || argc > 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	if (atoi(argv[1]) < 0)
+
+	cents = atoi(argv[1]);
+
+	while (cents > 0)
 	{
-		printf("%d\n", change);
-		return (1);
+		if (cents >= 25)
+			cents -= 25;
+		else if (cents >= 10)
+			cents -= 10;
+		else if (cents >= 5)
+			cents -= 5;
+		else if (cents >= 2)
+			cents -= 2;
+		else if (cents >= 1)
+			cents -= 1;
+		ncoins += 1;
 	}
-	for (i = 0; i < 5; i++)
-	{
-		for (j = 1; j < 4; j++)
-		{
-			if (atoi(argv[1]) / cent[i] != 0)
-			{
-				change = change + (atoi(argv[1]) / cent[i]);
-				cent[i] = cent [i] * change;
-			}
-			if (atoi(argv[1]) % cent [i] > cent[i + j])
-			{
-				change = change + (atoi(argv[1]) /cent[i + j]);
-			}else
-				remain = atoi(argv[1]) % cent[i];
-		}
-	}
-	total = remain + change;
-	printf("%d\n", total);
+	printf("%d\n", ncoins);
 	return (0);
 }
