@@ -4,7 +4,7 @@
   *@str: the string the space contains
   *Return: pointer to char
   */
-char _strdup(char *str)
+char *_strdup(char *str)
 {
 	char *str1;
 	unsigned int i;
