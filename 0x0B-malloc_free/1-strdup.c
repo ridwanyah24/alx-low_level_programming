@@ -7,7 +7,7 @@
 char *_strdup(char *str)
 {
 	char *str1;
-	unsigned int i;
+	unsigned int i, j;
 	
 	i = strlen(str);
 	
