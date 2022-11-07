@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+char *arguments(int ac, char **av);
 void free_grid(int **grid, int);
 int **alloc_grid(int width, int height);
 char *_strdup(char *str);
