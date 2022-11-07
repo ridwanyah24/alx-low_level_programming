@@ -9,8 +9,8 @@ char *_strdup(char *str)
 	char *str1;
 	unsigned int i, j;
 
-	i = strlen(str);	
-	str1 = malloc(sizeof(char) * i);
+	i = strlen(str);
+	str1 = malloc(sizeof(*str) * i);
 	if (str1 == NULL)
 		return (NULL);
 	for (j = 0; j < i; j++)
