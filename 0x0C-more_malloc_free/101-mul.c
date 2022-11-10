@@ -1,4 +1,11 @@
+/*
+ * File: 101-mul.c
+ * Auth: Brennan D Baraban
+ */
+
 #include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 int find_len(char *str);
 char *create_xarray(int size);
@@ -33,7 +40,20 @@ int find_len(char *str)
  */
 char *create_xarray(int size)
 {
-	char *array;
+	c
+		printf("Error\n");
+		exit(98);
+	}
+
+	return (digit);
+}
+
+/**
+ * get_prod - Multiplies a string of numbers by a single digit.
+ * @prod: The buffer to store the result.
+ * @mult: The string of numbers.
+ * @digit: The single digit.
+ * @zeroes: The necessary har *array;
 	int index;
 
 	array = malloc(sizeof(char) * size);
@@ -77,20 +97,7 @@ int get_digit(char c)
 	int digit = c - '0';
 
 	if (digit < 0 || digit > 9)
-	{
-		printf("Error\n");
-		exit(98);
-	}
-
-	return (digit);
-}
-
-/**
- * get_prod - Multiplies a string of numbers by a single digit.
- * @prod: The buffer to store the result.
- * @mult: The string of numbers.
- * @digit: The single digit.
- * @zeroes: The necessary number of leading zeroes.
+	{number of leading zeroes.
  *
  * Description: If mult contains a non-digit, the function
  *              exits with a status value of 98.
