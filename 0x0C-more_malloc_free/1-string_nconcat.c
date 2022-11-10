@@ -32,6 +32,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		concated[i] = s2[j];
 		j++;
+		if (k > strlen(s2))
+			break;
 	}
 	return (concated);
 }
