@@ -10,5 +10,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	void *Array;
 
 	Array = calloc(nmemb, size);
+	if (nmemb == 0 || size == 0)
+		return (NULL);
+	if (Array == NULL)
+		return NULL;
 	return (Array);
 }
