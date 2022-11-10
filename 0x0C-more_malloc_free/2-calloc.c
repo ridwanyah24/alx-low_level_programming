@@ -7,17 +7,10 @@
   */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *Array;
-	int i;
+	unsigned int *Array;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	Array = malloc(size * nmemb);
-	if (Array == NULL)
-		return (NULL);
-	for (i = 0; i < nmemb; i++)
-	{
-		Array[i] = 0;
-	}
+	Array = calloc(nmemb, size);
 	return (Array);
 }
