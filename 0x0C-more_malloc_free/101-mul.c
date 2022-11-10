@@ -34,26 +34,26 @@ int find_len(char *str)
  *                 the character 'x'. Adds a terminating null byte.
  * @size: The size of the array to be initialized.
  *
- * Description: If there is insufficient space, the
+ * Description: If th: The string of numbers to be iterate through.
+ *
+ * Return: A pointer to the next non-zero element.
+ */
+char *iterate_zeroes(char *str)
+{
+	while (*str && *str == '0')
+		str++;
+
+	return (str);
+}
+
+/**
+ * get_digit - Converts a digit character to a corresponere is insufficient space, the
  *              function exits with a status of 98.
  * Return: A pointer to the array.
  */
 char *create_xarray(int size)
 {
-	c
-		printf("Error\n");
-		exit(98);
-	}
-
-	return (digit);
-}
-
-/**
- * get_prod - Multiplies a string of numbers by a single digit.
- * @prod: The buffer to store the result.
- * @mult: The string of numbers.
- * @digit: The single digit.
- * @zeroes: The necessary har *array;
+	char *array;
 	int index;
 
 	array = malloc(sizeof(char) * size);
@@ -72,20 +72,7 @@ char *create_xarray(int size)
 /**
  * iterate_zeroes - Iterates through a string of numbers containing
  *                  leading zeroes until it hits a non-zero number.
- * @str: The string of numbers to be iterate through.
- *
- * Return: A pointer to the next non-zero element.
- */
-char *iterate_zeroes(char *str)
-{
-	while (*str && *str == '0')
-		str++;
-
-	return (str);
-}
-
-/**
- * get_digit - Converts a digit character to a corresponding int.
+ * @strding int.
  * @c: The character to be converted.
  *
  * Description: If c is a non-digit, the function
@@ -97,7 +84,20 @@ int get_digit(char c)
 	int digit = c - '0';
 
 	if (digit < 0 || digit > 9)
-	{number of leading zeroes.
+	{
+		printf("Error\n");
+		exit(98);
+	}
+
+	return (digit);
+}
+
+/**
+ * get_prod - Multiplies a string of numbers by a single digit.
+ * @prod: The buffer to store the result.
+ * @mult: The string of numbers.
+ * @digit: The single digit.
+ * @zeroes: The necessary number of leading zeroes.
  *
  * Description: If mult contains a non-digit, the function
  *              exits with a status value of 98.
