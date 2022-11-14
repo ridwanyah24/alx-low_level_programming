@@ -2,5 +2,5 @@
 #define FUNC_H
 #include <stdlib.h>
 #include <stdio.h>
-#define ABS(X) abs(x)
+#define ABS(X) abs(X)
 #endif
