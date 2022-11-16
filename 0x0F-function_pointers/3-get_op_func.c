@@ -1,3 +1,9 @@
+/**
+ * struct op - Struct op
+ *
+ * @op: The operator
+ * @f: The function associated
+ */
 #include "3-calc.h"
 /**
   *get_op_func- selects a function suitable for the neccessary operation
