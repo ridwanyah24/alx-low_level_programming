@@ -19,10 +19,6 @@ int int_index(int *array, int size, int (*cmp)(int))
 			if (cmp(array[i]) == 1)
 				return (i);
 		}
-		if (cmp(array[i - 1] != 1))
-		{
-			return (-1);
-		}
 	}
-	exit(98);
+	return (-1);
 }
