@@ -9,11 +9,11 @@ void print_all(const char * const format, ...)
 {
 	va_list ap;
 	int i = 0, j, a = 0;
-	int num_args = strlen(format);
+	/*int num_args = strlen(format);*/
 	char *strings, fmt[5] = "cifs";
 
 	va_start(ap, format);
-	while (i < num_args && format)
+	while (format[i] != '\0' && format)
 	{
 		j = 0;
 		while (fmt[j] != '\0')
@@ -22,8 +22,7 @@ void print_all(const char * const format, ...)
 			{
 				printf(", ");
 				break;
-			}
-			j++;
+			} j++;
 		}
 		switch (format[i])
 		{
