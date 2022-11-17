@@ -1,24 +1,24 @@
 #include "variadic_functions.h"
-#include <string.h>
+
 /**
-  *print_all - prints anything.
-  *@format: the type of what to print
-  *
-  */
+ * print_all - prints any thing of any type
+ * @format: format of things to print
+ *
+ * Return: void
+ */
 void print_all(const char * const format, ...)
 {
-	va_list ap;
-	int i = 0, j, a = 0;
-	/*int num_args = strlen(format);*/
-	char *strings, fmt[5] = "cifs";
+	int i = 0, j, p = 0;
+	va_list things_to_print;
+	char *next, fmt[5] = "cifs";
 
-	va_start(ap, format);
-	while (format[i] != '\0' && format)
+	va_start(things_to_print, format);
+	while (format && format[i] != '\0')
 	{
 		j = 0;
 		while (fmt[j] != '\0')
 		{
-			if (format[i] == fmt[j] && a != 0)
+			if (format[i] == fmt[j] && p != 0)
 			{
 				printf(", ");
 				break;
@@ -26,25 +26,26 @@ void print_all(const char * const format, ...)
 		}
 		switch (format[i])
 		{
-			case 'i':
-				printf("%d", va_arg(ap, int)), a++;
+		case 'c':
+			printf("%c", va_arg(things_to_print, int)), p = 1;
+			break;
+		case 'i':
+			printf("%d", va_arg(things_to_print, int)), p = 1;
+			break;
+		case 'f':
+			printf("%f", va_arg(things_to_print, double)), p = 1;
+			break;
+		case 's':
+			next = va_arg(things_to_print, char *), p = 1;
+			if (next)
+			{
+				printf("%s", next);
 				break;
-			case 'c':
-				printf("%c", va_arg(ap, int)), a++;
-				break;
-			case 'f':
-				printf("%f", va_arg(ap, double)), a++;
-				break;
-			case 's':
-				strings = va_arg(ap, char*);
-				if (strings == NULL)
-					strings = "(nil)";
-				printf("%s", strings);
-				a++;
-				break;
+			}
+			printf("(nil)");
+			break;
 		}
 		i++;
 	}
-	va_end(ap);
 	printf("\n");
 }
