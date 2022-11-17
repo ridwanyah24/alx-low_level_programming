@@ -11,6 +11,7 @@ void print_all(const char * const format, ...)
 	int i = 0;
 	int num_args = strlen(format);
 	char *strings;
+	int a = 0;
 
 	va_start(ap, format);
 	while (i < num_args)
@@ -19,22 +20,25 @@ void print_all(const char * const format, ...)
 		{
 			case 'i':
 				printf("%d", va_arg(ap, int));
+				a++;
 				break;
 			case 'c':
 				printf("%c", va_arg(ap, int));
+				a++;
 				break;
 			case 'f':
 				printf("%f", va_arg(ap, double));
+				a++;
 				break;
 			case 's':
 				strings = va_arg(ap, char*);
 				if (strings == NULL)
 					strings = "(nil)";
 				printf("%s", strings);
+				a++;
 				break;
 		}
-		if (i != num_args - 1 && (format[i] == 'i' || format[i] == 'c' ||
-					 format[i] == 'f' || format[i] == 's'))
+		if (i != num_args - 1 && a != 0)
 		{
 			printf(", ");
 		}
