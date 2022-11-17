@@ -8,14 +8,24 @@
 void print_all(const char * const format, ...)
 {
 	va_list ap;
-	int i = 0;
+	int i = 0, j;
 	int num_args = strlen(format);
-	char *strings;
+	char *strings, fmt[5] = "cifs";
 	int a = 0;
 
 	va_start(ap, format);
 	while (i < num_args)
 	{
+		j = 0;
+		while (fmt[j] != '\0')
+		{
+			if (format[i] == fmt[j] && a != 0)
+			{
+				printf(", ");
+				break;
+			}
+			j++;
+		}
 		switch (format[i])
 		{
 			case 'i':
@@ -37,10 +47,6 @@ void print_all(const char * const format, ...)
 				printf("%s", strings);
 				a++;
 				break;
-		}
-		if (i != num_args - 1 && a != 0)
-		{
-			printf(", ");
 		}
 		i++;
 	}
