@@ -10,7 +10,7 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	char bit;
 
-	if (index >= (sizeof(unsigned long int) *8))
+	if (index >= (sizeof(unsigned long int) * 8))
 		return (-1);
 
 	bit = (n >> index) & 1;
