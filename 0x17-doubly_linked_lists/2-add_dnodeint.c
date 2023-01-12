@@ -1,19 +1,19 @@
 #include "lists.h"
 /**
   * add_dnodeint - adds a node at the beginning of a double linked list
-  *@head - pointer to the first node
-  *@n - the number to add for the new node
+  *@head: pointer to the first node
+  *@n: the number to add for the new node
   *
   *Return: pointer to the linked list
   */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *new_node, *temp;
-	new_node = malloc(sizeof(dlistint_t));
 
+	new_node = malloc(sizeof(dlistint_t));
 	if (new_node == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 	if (*head)
 	{
@@ -27,5 +27,5 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 
 		return (new_node);
 	}
-	return NULL;
+	return (NULL);
 }
