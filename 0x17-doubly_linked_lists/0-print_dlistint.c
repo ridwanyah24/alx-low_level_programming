@@ -7,23 +7,9 @@
   */
 size_t print_dlistint(const dlistint_t *h)
 {
-	int i = 0, j;
-	dlistint_t *temp;
-
-	temp = h;
-
-	if(h)
+	while (h)
 	{
-		while(h)
-		{
-			i++;
-			h = h->next;
-		}
-		h = temp;
-		for(j = 0; j < i; j++)
-		{
-			printf("%d\n", h->n);
-			h = h->next;
-		}
+		printf("%d\n", h->n);
+		h = h->next;
 	}
 }
