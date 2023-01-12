@@ -18,6 +18,8 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 
 		temp = *head;
 		*head = new_node;
+
+		return (*head)
 	}
 	return NULL;
 }
