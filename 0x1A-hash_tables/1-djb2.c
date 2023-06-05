@@ -5,7 +5,7 @@
 
 /**
   *hash_djb2 - implements the djb2 algorithm
-  *@str - the string
+  *@str: the string
   *
   *Return: unsigned long int
   */
